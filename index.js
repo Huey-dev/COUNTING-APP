@@ -21,7 +21,7 @@ function increment() {
 // increment the count variable when the button is clicked
 
     count += 1;
-    countElement.innerText = count;
+    countElement.textContent = count;
 }
 
 // to change the "count-emt" in the html to reflect the new count
@@ -30,8 +30,10 @@ function save() {
     // create a variable that contains both the count and the dash separator, i.e. "13 - "
     let countStr = count + " " + " - ";
     // render the variable in the saveElement using the innerText
-    saveElement.textContent += countStr
-    console.log(count)
+    saveElement.textContent += countStr;
+    console.log(count);
+    countElement.textContent = 0;
+    count = 0;
 }
 
 
